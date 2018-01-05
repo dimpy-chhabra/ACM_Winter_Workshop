@@ -1,0 +1,25 @@
+data <- read.csv("trump_tweets.csv")
+getmode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+print("Mean: ")
+cat("Mean of Lenght: ",mean(data$length))
+cat("\n")
+cat("Mean of Number of Hashtags: ",mean(data$number_of_hashtags))
+cat("\n")
+cat("Mean of Number of Mentions: ",mean(data$number_of_mentions))
+cat("\n")
+cat("Mean of Number of Likes Received: ",mean(data$likes_received))
+cat("\n")
+cat("Mean of Number of Retweets Received: ",mean(data$retweets_received))
+cat("\n")
+cat("Mean of Number of sentiment Polarity: ",mean(data$sentiment_polarity))
+cat("\n")
+cat("Mean of Number of sentiment subjectivity: ",mean(data$sentiment.subjectivity))
+cat("\n")
+print("Median: ")
+print(median(data$length, na.rm = FALSE))
+print("Mode: ")
+print(getmode(data$length))
+
