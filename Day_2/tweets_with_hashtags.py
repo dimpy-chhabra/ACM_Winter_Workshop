@@ -6,18 +6,13 @@ from tweepy import OAuthHandler
 import csv
 from textblob import TextBlob
 from datetime import datetime
-'''
+
 consumer_key = ""
 consumer_secret = ""
 access_token = ""
 access_secret = ""
 twitter_handle=''
-'''
-consumer_key = "lSOxvZKPuvnOOxQHh6cMGY96q"
-consumer_secret = "MPPrax16SZCJwiKzwtrFsPUGHs371CdR1cG3cV64n84SbdI9mq"
-access_token = "949715346037948416-yXcxV0bECyTSCFA2RJrigL1D0eSiDzl"
-access_secret = "d9BLKBhnbiNhSUP14asYJQg818NXhBemzpeI6V7LaGpGL"
-twitter_handle='realDonaldTrump'
+
 
 auth=OAuthHandler(consumer_key,consumer_secret)
 
