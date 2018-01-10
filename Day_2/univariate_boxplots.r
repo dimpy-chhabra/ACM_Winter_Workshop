@@ -20,5 +20,3 @@ boxplot(d, main="likes_received", sub=paste("Outlier rows: ", boxplot.stats(d)$o
 linearMod <- lm(dist ~ speed, data=data)  # build linear regression model on full data
 
 print(linearMod)
-
-#dist = −17.579 + 3.932∗speed
